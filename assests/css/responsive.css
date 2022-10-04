@@ -1,0 +1,223 @@
+/* ============== start responsive ================= */
+/* =========== below 944px (tablets) ================== */
+@media (max-width: 944px) {
+  .nav__bar-links {
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--main-color);
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .nav__bar-links.show {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .nav__bar-links a {
+    color: var(--white);
+    font-size: 1.5rem;
+  }
+
+  .nav__bar-links a::before {
+    background-color: var(--white);
+  }
+
+  .nav__bar-icons,
+  .hero__section-img,
+  .cup__img {
+    display: none;
+  }
+
+  .navbar__menu {
+    display: flex;
+  }
+
+  .product {
+    margin-bottom: 50px;
+  }
+
+  .delivery__wrapper-left::after,
+  .delivery__wrapper-left::before {
+    width: 0;
+    height: 0;
+  }
+  .box {
+    width: 45%;
+  }
+
+  .app__download {
+    flex-direction: column;
+  }
+
+  .app__par {
+    width: fit-content;
+  }
+
+  .testi__container {
+    flex-direction: column;
+  }
+
+  .testi__box {
+    width: 95%;
+    justify-content: center;
+  }
+
+  .footer__content {
+    gap: 50px;
+  }
+}
+/* ===========  max width 704px ================== */
+
+@media (max-width: 704px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .section__padding {
+    padding-bottom: 150px;
+  }
+
+  .nav__bar {
+    padding: 20px;
+  }
+
+  .hero__section {
+    text-align: center;
+  }
+
+  .hero__section-content,
+  .hero__section-content-p,
+  .hero__section-heading,
+  .hero__section-btns {
+    margin-bottom: 15px;
+  }
+
+  .hero__section-meal {
+    justify-content: center;
+  }
+
+  .menu,
+  .popular {
+    background-image: none;
+  }
+
+  .menu .section__heading h2 {
+    width: fit-content;
+  }
+
+  .menu__container {
+    gap: 10px;
+  }
+
+  .box {
+    width: 90%;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .meal__info {
+    margin: 0 auto;
+  }
+
+  .app__container .section__heading {
+    text-align: center;
+  }
+
+  .app__container {
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .discount {
+    display: none;
+  }
+
+  .footer__content {
+    padding: 30px;
+    justify-content: center;
+  }
+}
+
+/* =========== mobile device max width 544px ================== */
+@media (max-width: 544px) {
+  html {
+    font-size: 11px;
+  }
+  .container {
+    width: 95%;
+  }
+
+  .section__padding {
+    padding-bottom: 60px;
+  }
+
+  .hero__section-btns .main__btn {
+    margin-bottom: 15px;
+  }
+
+  .hero__section-heading::after,
+  .hero__section-heading::before,
+  .bg__img2,
+  .bg__img,
+  .app__container-img .Decore,
+  .menu .bg__img,
+  .hero__wrapper .dots {
+    display: none;
+  }
+
+  .delivery__wrapper {
+    flex-direction: column;
+  }
+
+  .delivery__wrapper-left {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .delivery__wrapper-right {
+    width: 90%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .menu__container {
+    gap: 10px;
+  }
+
+  .box {
+    width: 95%;
+  }
+
+  .app__container-img img {
+    width: 200px;
+  }
+
+  .testi__container {
+    flex-direction: column;
+  }
+
+  .testi__box {
+    width: 95%;
+  }
+
+  q {
+    width: fit-content;
+  }
+}
